@@ -18,7 +18,7 @@ layout: feed
    <title>{{ post.title }}</title>
    <link href="http://gregor-fausto.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://jmcglone.com/notes{{ post.id }}</id>
+   <id>http://http://gregor-fausto.github.io/notes{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
