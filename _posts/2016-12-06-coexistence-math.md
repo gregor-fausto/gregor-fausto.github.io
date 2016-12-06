@@ -6,8 +6,6 @@ layout: post
 Let's start by writing the two-species Lotka-Volterra competition
 equations with absolute competition coefficients (Chesson 2000):
 
-$$similarity(\vec{A}, \vec{B}) = \frac{\sum_{i=1}^{n}A_iB_i}{\sqrt{\sum_{i=1}^{n}A_i^2}\sqrt{\sum_{i=1}^{n}B_i^2}}$$
-
 $$\\frac{1}{N\_{i}} \\cdot \\frac{dN\_{i}}{dt} = r\_{i}(1 - \\alpha\_{ii}N\_{i} - \\alpha\_{ij}N\_{j}),\\quad  i=1,2,\\ j \\neq i$$
 
 Written in this way, species *i* can increase from low density in the
