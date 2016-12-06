@@ -3910,7 +3910,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-pills > li > a {
-  border-radius: 5px;
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
 }
 
 .nav-pills > li + li {
@@ -3920,7 +3922,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  border-color: #56ae6c;
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
 }
 
 .nav-stacked > li {
@@ -4906,7 +4910,8 @@ a.badge:focus {
 }
 
 a.list-group-item.active > .badge,
-.nav-pills > .active > a > .badge {
+.nav-
+> .active > a > .badge {
     border-radius: 25px;
     border: 2px solid #73AD21;
     padding: 5px; 
