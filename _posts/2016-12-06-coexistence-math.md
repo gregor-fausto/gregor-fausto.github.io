@@ -1,6 +1,6 @@
 ---
 title: "Lotka-Volterra Competition Models"
-output: post
+layout: post
 ---
 
 Let's start by writing the two-species Lotka-Volterra competition equations with absolute competition coefficients (Chesson 2000):
