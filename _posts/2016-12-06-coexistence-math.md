@@ -98,6 +98,8 @@ decreases until coexistence with complete niche overlap is only possible
 with fitness equivalence. The inverse is true when coexistence
 conditions are plotted as a function of stablizing niche differences.
 
+![plot of chunk my-first-plot]({{ site.url }}/_posts/unnamed-chunk-1-1.png) 
+
 I'm at three alternative formulations of coexistence conditions.
 
 $$\\rho&lt;\\frac{h\_{i}-m\_{i}}{h\_{j}-m\_{j}}&lt;1/\\rho \\\\ \\rho&lt;\\frac{\\mu\_{i}}{\\mu\_{j}} \\cdot \\frac{b\_{j}}{b\_{i}}&lt;1/\\rho \\\\ \\rho&lt;\\frac{\\kappa\_{i}}{\\kappa\_{j}}&lt;1/\\rho$$
