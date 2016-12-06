@@ -98,7 +98,7 @@ decreases until coexistence with complete niche overlap is only possible
 with fitness equivalence. The inverse is true when coexistence
 conditions are plotted as a function of stablizing niche differences.
 
-![plot of chunk my-first-plot]({{ site.url }}/_posts/unnamed-chunk-1-1.png) 
+![plot of chunk my-first-plot]({{ site.url }}/gregor-fausto.github.io/_posts/unnamed-chunk-1-1.png) 
 
 I'm at three alternative formulations of coexistence conditions.
 
