@@ -50,7 +50,7 @@ growth rate of an invader *i* can be written as:
 
 $$\\begin{aligned} \\overline{r}\_{i} = \\frac{1}{N\_{i}} \\cdot \\frac{dN\_{i}}{dt} &= b\_{i} (k\_{i}-k\_{s}) + b\_{i}(1-\\rho)k\_{s} \\\\ &= b\_{i} (\\frac{\\mu\_{i}}{b\_{i}}-\\frac{\\mu\_{s}}{b\_{s}}) + b\_{i}(1-\\rho)\\frac{\\mu\_{s}}{b\_{s}}\\\\ \\end{aligned}$$
 
-Note that the \_k\_s are equivalent to the *μ*/*b*s and *ρ* is a measure
+Note that the *k*s are equivalent to the *μ*/*b*s and *ρ* is a measure
 of resource-use overlap. \[Important references here include MacArthur
 (1970), Armstrong and McGehee (1980), Chesson (1990), Chesson and Huntly
 (1997)\] The first term of this equation is the *average fitness
