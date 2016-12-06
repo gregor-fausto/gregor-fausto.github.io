@@ -3915,7 +3915,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-left: 2px;
 }
 
-.nav-pills > li> a
+.nav-pills > li> a,
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
