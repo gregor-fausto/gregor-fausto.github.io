@@ -132,18 +132,18 @@ I'm not sure if it took Chesson-math to extend the logic. In any case,
 this packages itself into neat relationships between interaction
 coefficients, niche overlap, and ecological fitness:
 
-$$\\frac{\\alpha\_{ij}}{{\\alpha}\_{jj}} = \\frac{\\kappa\_{j}}{\\kappa\_{i}}\\rho$$
+$$\\frac{\\alpha\_{ij}}{\\alpha\_{jj}} = \\frac{\\kappa\_{j}}{\\kappa\_{i}}\\rho$$
 
 and the flip side of the relationship:
 
-$$\\frac{\\alpha\_{ji}}{{\\alpha}\_{ii}} = \\frac{\\kappa\_{i}}{\\kappa\_{j}}\\rho$$
+$$\\frac{\\alpha\_{ji}}{\\alpha\_{ii}} = \\frac{\\kappa\_{i}}{\\kappa\_{j}}\\rho$$
 
 These can be combined into a single equation, providing a symmetric
 measure of the ratio of interspecific to intraspecific density
 dependence for any pair of species *i* and *j*. Substitute the *κ* terms
 from one equation into the other, and take the square root to get:
 
-$$\\rho = \\sqrt{\\frac{\\alpha\_{ij}}{{\\alpha}\_{jj}} \\cdot \\frac{\\alpha\_{ji}}{{\\alpha}\_{ii}}}$$
+$$\\rho = \\sqrt{\\frac{\\alpha\_{ij}}{\\alpha\_{jj}} \\cdot \\frac{\\alpha\_{ji}}{\\alpha\_{ii}}}$$
 
 With Chesson's assistance, Godoy and Levine (2014a) then rescaled an
 annual plant population growth model that accounts for intraspecific and
