@@ -19,7 +19,7 @@ knit(filename, output)
 fromdir = "{{ site.url }}/files"
 todir = "../files"
 
-pics = list.files(fromdir, ".png")
+pics = list.files(fromdir, ".jpg")
 pics = sapply(pics, function(x) paste(fromdir, x, sep="/"))
 file.copy(pics, todir)
 unlink("{{ site.url }}", recursive=T)
