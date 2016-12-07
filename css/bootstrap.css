@@ -4362,7 +4362,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-text {
   float: left;
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
