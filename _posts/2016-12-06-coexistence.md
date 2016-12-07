@@ -11,7 +11,7 @@ $$\frac{1}{N_{i}} \cdot \frac{dN_{i}}{dt} = r_{i}(1 - \alpha_{ii}N_{i} - \alpha_
 
 Written in this way, species _i_ can increase from low density in the presence of competitor _j_ if $\alpha_{ii}>\alpha{ij}$; that is, if intraspecific competition is stronger than interspeciic competition. This is written by Chesson as "species _j_ cannot competitively exclude species _i_ if the effect that species _j_ has on itself is more than the effect that spevcies _j_ has on species _i_."
 
-Note that in Lotka-Volterra models, per capita growth rates are linear functions of density. Nonlinear per capita growth rates can be incorporated into a model of the kind above by making  competition coefficients a function of density [$\alpha_{ij}=f_{ij}(N_{i},N_{j})$]. The results will remain true if the competition coefficients are evaluated for a resident at equilibrium and the invader at zero.
+Note that in Lotka-Volterra models, per capita growth rates are linear functions of density. Nonlinear per capita growth rates can be incorporated into a model of the kind above by making  competition coefficients a function of density ( $\alpha_{ij}=f_{ij}(N_{i},N_{j})$ ). The results will remain true if the competition coefficients are evaluated for a resident at equilibrium and the invader at zero.
 
 A special linear form of the resource limitation model (related to R*, I believe) advances this idea. To start, consider a model with a single resource as the limiting factor. The long-term low-density growth rate of an invader _i_ that competes with a resident _s_ is: 
 

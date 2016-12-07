@@ -1,0 +1,227 @@
+---
+title: "spatial variation and the maintenance of genetic variation"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Standard Diploid Model for Selection
+
+The model proposed in Levene (1953) has the following structure, which follows from standard diploid models. 
+
+In a diploid model, organisms are formed by the union of haploid gametes. Let there be alleles $A$ and $a$ with gene frequencies $p$ and $q=1-p$, respectively. This means that with 2 genotypes ($A$ and $a$), we track 3 kinds of diploid individuals ($AA$, $Aa$, and $aa$). For simplicity's sake, we census the population at the haploid stage of the life cycle [p(t)=fraction of type-A gametes] and assume that diploids are formed by gametes uniting at random. The initial zygotic frequencies (ie. frequencies of diploids) folow Hardy-Weinberg proportions of $p^2$, $2pq$, $q^2$ for $AA$, $Aa$, $aa$.
+
+So far, so good; this is the textbook introduction to the diploid model (see Otto and Day 2007). Let's consider what happens without multiple niches. After selection acts, the proportions in the population are 
+
+$$p^2 W_{AA}, 2pq W_{Aa}, q^2 W_{aa}$$
+
+where $W_{AA}$ is the fitness of an $AA$ individual. To make these values into true proportions, they need to sum to 1. Let $\bar{W}$ denote their sum. The genotype proportions are thus
+
+$$p^2 W_{AA}/\bar{W}, 2pq W_{Aa}/\bar{W}, q^2 W_{aa}/\bar{W}$$
+
+To get back to the gamete stage, we look at the proportions of $A$ versus $a$ gametes produceded by these individuals. We can do this by counting how many gametes are produced and figuring out the proportion that are type $A$. We thus need to define $N$=total population size and $G$=number of gametes produced per diploid individuals. _By assumption_, selection has already acted so all genotypes have the same $G$. 
+
+The number of $A$ gametes produced is the number from $AA$ individuals plus those from $Aa$ individuals.
+
+From $AA$: $$p^2 W_{AA} / \bar{W} \times N \times G$$
+
+From $Aa$: $$(1/2)pq W_{Aa} / \bar{W} \times N \times G$$
+
+The total number of gametes from everybody is $N \times G$. With a little bit of algebra, this means that the fraction of $A$ gametes out of the total is:
+
+$$(p^2 W_{AA} + pq W_{Aa})/\bar{W}$$
+
+This gets us to the next generation, where we have:
+
+$$p(t+1)=(p^2 W_{AA} + pqW_{Aa})/\bar{W}=p\frac{\bar{W_A}}{\bar{W}}$$
+
+where $\bar{W_A}$ is the average fitness of A alleles $\bar{W_A} = pW_{AA}+(1-p)W_{Aa}$.
+
+### Levene's model
+
+In Levene's model, the zygotes "settle down at random in large numbers into each of the niches, and are thereafter immobile." Differential mortality, or selection, acts at this point. Levene writes that there is "then differential mortality ending with a fixed number of individuals in each niche". Levene's formulation also compares adaptive values of $AA$ and $aa$ (here, $a$ is the $A'$ of Levene) to $Aa$, and also only looks at the relative number of survivors per niche, rather than the absolute numbers. I'm going to try to generalize this a bit more.
+
+After differential mortality (ie. selection), the frequencies are
+
+$$p^2 W_{AA,1}, 2pq W_{Aa,1}, q^2 W_{aa,1}$$
+$$p^2 W_{AA,2}, 2pq W_{Aa,2}, q^2 W_{aa,2}$$
+$$\vdots$$
+$$p^2 W_{AA,i}, 2pq W_{Aa,i}, q^2 W_{aa,i}$$
+
+Levene disregards drift, which allows him to consider only the force of selection. Put another way, there is strong density-dependent survival so that a fixed number of individuals survive in each patch -- each habitat always contributes the same proportion of individuals. This way, the absolute number of survivors in the different niches is irrelevant and he works only with $c_i$, the porportion of total surivors found in the i-th niche (ie. $\sum{c_i}=1$). 
+
+To complete the model, suppose that at time of reproduction the survivors leave the niches and that mating is random in the entire population. Let $p'$ denote the frequency of $A$ in the entire mating population, then $p' = \sum{c_i p_i}$ where $p_i$ is the frequency of $A$ in the i-th niche after selection.
+
+Mark Rausher has [course notes](http://sites.biology.duke.edu/rausher/evmech/sv1.pdf) (from a course in 2001) that work through the Levene math for a two patch system using the standard diploid notation. This confirms that, after selection in habitat $i$, the frequency of allele $A$ is the same as above
+
+$$p(t+1)=(p^2 W_{AA} + pqW_{Aa})/\bar{W}=p\frac{\bar{W_A}}{\bar{W}}$$
+
+Now, however, gene frequencies after selection will be different in each patch (since Ws are vary between patches). The gene frequencies in the adult mating pool are then given by multiplying those frequencies by the proportion $c_i$ that each patch contributes. 
+
+The total frequency of the alleles in the adult mating pool is obtained by summing across both patches:
+
+$$p(t+1) = p(t+1)_1 c_1 + p(t+1)_2 c_2 = \sum_{i}c_i[\frac{pW_{AA,i}+(1-p)W_{Aa,i}}{p^2 W_{AA,i} + 2p(1-p) W_{Aa,i} + (1-p)^2 W_{aa,i}}$$
+
+At equilibrium, $p(t+1)=p(t)$, which means that
+
+$$ 1 = \sum_{i}c_i\frac{pW_{AA,i}+(1-p)W_{Aa,i}}{p^2 W_{AA,i} + 2p(1-p) W_{Aa,i} + (1-p)^2 W_{aa,i}}$$
+
+Rausher then proceeds to determine whether an allele is protected or not. We start by considering fixation of the $a$ allele (ie. $p=0$).
+
+If we start at this equilibrium and introduce a mutant $A$ allele, will the frequency of $A$ increase? Write the equation for p(t+1) as a function:
+
+$$f(p)=p(t+1)_1 c_1 + p(t+1)_2 c_2 = \sum_{i}c_i[\frac{pW_{AA,i}+(1-p)W_{Aa,i}}{p^2 W_{AA,i} + 2p(1-p) W_{Aa,i} + (1-p)^2 W_{aa,i}}$$
+
+Represent the function f(p) as a Taylor expansion about some arbitrary value of p, which we'll call $p_0$
+
+$$f(p) \simeq f(p_0) + (p - p_0)\frac{df}{dp} + ...$$
+
+Choose $p_0$ to be 0 to be the reference point for the fixation equilibrium. Now because $f(p_0)=0$ (gene frequency doesn't change if the allele is fixed), the equation reduces to 
+
+$$f(p) \simeq (p)\frac{df}{dp}$$
+
+Which means that the gene frequency of allele A will increase (p(t+1)>p(t)) if and only if 
+
+$$ \frac{df}{dp} > 1 $$
+
+The derivative $\frac{df}{dp}$ of $f(p)$ evaluated at p=0 is 
+
+$$ f`(0)=c_1 \frac{1}{W_{aa,1}} + c_2 \frac{1}{W_{aa,2}} $$
+
+For stability, this expression must be greater than 1, which gives
+
+$$ c_1 \frac{1}{W_{aa,1}} + c_2 \frac{1}{W_{aa,2}} > 1 $$
+$$ \sum_{i}{c_i}\frac{1}{W_{aa,i}} > 1$$
+$$ \frac{1}{\sum_{i}{c_i \frac{1}{W_{aa,i}}}} <1$$
+
+This is equivalent to saying that the harmonic mean of the relative fitness of the $aa$ genotype must be less than 1 (less than that of the heterozygote).
+
+__Spatial variation in selection pressures can maintain a stable polymorphism if the harmonic mean of the fitness of each homozygote is less than the fitness of the heterozygote.__ This condition is equivalent to there being a reversal in the ordering of fitnesses across two habitats; this is also called a __negative genetic correlation__ in fitness across habitats.
+
+* note this result is different than what Levene (1953) suggests. He writes that p=0.35 should be a stable equilibrium, and that p=0.6 should be unstable
+```{r levene}
+rm(list=ls(all=TRUE))
+
+ngens=1001
+
+# initialize vector for solution
+# set initial conditions
+p=seq(0.0,1,by=.01);
+pvals=matrix(nrow=ngens,ncol=length(p));
+pvals[1,]=p;
+
+# set initial conditions
+c1=0.5; c2=0.5;
+# niche 1
+W.AA.1=2; W.Aa.1=1; W.aa.1=1.1; 
+# niche 2
+W.AA.2=0.5; W.Aa.2=1; W.aa.2=1.1;
+
+# initialize vectors for allele frequencies
+W.A.1=numeric(ngens)
+W.1=numeric(ngens)
+W.A.2=numeric(ngens)
+W.2=numeric(ngens)
+
+# write for loop to project through 50 generations
+for(i in 1:length(p)){
+  for(j in 2:ngens) {
+  pnow = pvals[j-1,i]
+  W.A.1=pnow*W.AA.1+(1-pnow)*W.Aa.1;
+  W.1=(pnow^2)*W.AA.1+2*pnow*(1-pnow)*W.Aa.1+((1-pnow)^2)*W.aa.1;
+  W.A.2=pnow*W.AA.2+(1-pnow)*W.Aa.2;
+  W.2=(pnow^2)*W.AA.2+2*pnow*(1-pnow)*W.Aa.2+((1-pnow)^2)*W.aa.2;
+  pvals[j,i]=sum(c1*pnow*(W.A.1/W.1),c2*pnow*(W.A.2/W.2))
+}
+}
+
+matplot(1:ngens,pvals,type="o",lty=1,xlim=c(0,ngens),
+        pch=rep(NA,length(p)),
+        ylab="Frequency of Allele A (p)",xlab="Generation (n)");
+```
+
+```{r levene2}
+rm(list=ls(all=TRUE))
+
+ngens=1001
+
+# initialize vector for solution
+# set initial conditions
+p=seq(0.0,1,by=.01);
+pvals=matrix(nrow=ngens,ncol=length(p));
+pvals[1,]=p;
+
+# set initial conditions
+c1=0.5; c2=0.5;
+# niche 1
+W.AA.1=2; W.Aa.1=1; W.aa.1=1.2; 
+# niche 2
+W.AA.2=0.5; W.Aa.2=1; W.aa.2=1.2;
+
+# initialize vectors for allele frequencies
+W.A.1=numeric(ngens)
+W.1=numeric(ngens)
+W.A.2=numeric(ngens)
+W.2=numeric(ngens)
+
+# write for loop to project through 50 generations
+for(i in 1:length(p)){
+  for(j in 2:ngens) {
+  pnow = pvals[j-1,i]
+  W.A.1=pnow*W.AA.1+(1-pnow)*W.Aa.1;
+  W.1=(pnow^2)*W.AA.1+2*pnow*(1-pnow)*W.Aa.1+((1-pnow)^2)*W.aa.1;
+  W.A.2=pnow*W.AA.2+(1-pnow)*W.Aa.2;
+  W.2=(pnow^2)*W.AA.2+2*pnow*(1-pnow)*W.Aa.2+((1-pnow)^2)*W.aa.2;
+  pvals[j,i]=sum(c1*pnow*(W.A.1/W.1),c2*pnow*(W.A.2/W.2))
+}
+}
+
+matplot(1:ngens,pvals,type="o",lty=1,xlim=c(0,ngens),
+        pch=rep(NA,length(p)),
+        ylab="Frequency of Allele A (p)",xlab="Generation (n)");
+```
+
+```{r levene3}
+rm(list=ls(all=TRUE))
+
+ngens=1001
+
+# initialize vector for solution
+# set initial conditions
+p=seq(0.0,1,by=.01);
+pvals=matrix(nrow=ngens,ncol=length(p));
+pvals[1,]=p;
+
+# set initial conditions
+c1=0.5; c2=0.5;
+# niche 1
+W.AA.1=1.1; W.Aa.1=1; W.aa.1=.9; 
+# niche 2
+W.AA.2=.9; W.Aa.2=1; W.aa.2=1.1;
+
+# initialize vectors for allele frequencies
+W.A.1=numeric(ngens)
+W.1=numeric(ngens)
+W.A.2=numeric(ngens)
+W.2=numeric(ngens)
+
+# write for loop to project through 50 generations
+for(i in 1:length(p)){
+  for(j in 2:ngens) {
+  pnow = pvals[j-1,i]
+  W.A.1=pnow*W.AA.1+(1-pnow)*W.Aa.1;
+  W.1=(pnow^2)*W.AA.1+2*pnow*(1-pnow)*W.Aa.1+((1-pnow)^2)*W.aa.1;
+  W.A.2=pnow*W.AA.2+(1-pnow)*W.Aa.2;
+  W.2=(pnow^2)*W.AA.2+2*pnow*(1-pnow)*W.Aa.2+((1-pnow)^2)*W.aa.2;
+  pvals[j,i]=sum(c1*pnow*(W.A.1/W.1),c2*pnow*(W.A.2/W.2))
+}
+}
+
+matplot(1:ngens,pvals,type="o",lty=1,xlim=c(0,ngens),
+        pch=rep(NA,length(p)),
+        ylab="Frequency of Allele A (p)",xlab="Generation (n)");
+```
+
+If we instead allow drift to play a role, we can begin by assuming an initial population size $N_{t_1}$ and niches of equal sizes. Differential mortality at each time step changes $N_{t_i}$ but each niche gets an equal share of the population at each time step.
