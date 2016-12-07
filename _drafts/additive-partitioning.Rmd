@@ -1,6 +1,6 @@
 ---
 title: "Additive Partitioning of Biodiversity Effects"
-output: default
+layout: default
 ---
 
 ```{r, echo=FALSE}

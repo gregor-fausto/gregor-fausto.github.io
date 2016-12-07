@@ -1,6 +1,6 @@
 ---
 title: "spatial variation and the maintenance of genetic variation"
-output: default
+layout: default
 ---
 
 
