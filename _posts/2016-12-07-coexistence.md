@@ -36,6 +36,27 @@ $$\rho<\frac{h_{i}-m_{i}}{h_{j}-m_{j}}<1/\rho$$
 I'm thinking about this in the following way. As niche overlap increases, the ratio of average fitness differences ($(h_{i}-m_{i})/(h_{j}-m_{j})$) that permit coexistence decrease. In particular, $\rho$ and $1/\rho$ both tend to 1; this means that coexistence under high niche overlap is only possible with fitness equivalence. The formulation in Chesson and Huntly (1997) explicitly shows that fitness is the net maximum harvest rate. I could be wrong but this means that the average fitness difference can depend on the environment if different environments have different effects on different species. 
 The shaded region of the graphs below show the regions of coexistence, as a function of either niche overlap ($\rho$) or stabilizing niche difference ($1-\rho$). As niche overlap increases, the range of average fitness differences that permit coexistence decreases until coexistence with complete niche overlap is only possible with fitness equivalence. The inverse is true when coexistence conditions are plotted as a function of stablizing niche differences.
 
+
+```r
+x <- seq(0,1,0.01)
+y1 <- 1/x
+y2 <- x*0
+
+par(mfrow=c(1,2))
+
+plot(x=x, y=1/x, xlab = "Niche Overlap (rho)",
+       ylab = "Average Fitness Difference (ratio)",
+       type="l",xlim = c(0, 1))
+points(x,y2,type="l")
+polygon(c(x,rev(x)),c(y2,rev(y1)),col="gray")
+
+plot(x=1-x, y=1/x, xlab = "Stabilizing Niche Difference (1-rho)",
+       ylab = "Average Fitness Difference (ratio)",
+       type="l",xlim = c(0, 1))
+points(1-x,y2,type="l")
+polygon(c(1-x,rev(1-x)),c(y2,rev(y1)),col="gray")
+```
+
 ![plot of chunk unnamed-chunk-2]({{ site.url }}/images/coexistence-unnamed-chunk-2-1.png)
 
 I'm at three alternative formulations of coexistence conditions.
@@ -100,7 +121,7 @@ $$\frac{\kappa_{j}}{\kappa_{i}} = \left( \frac{\eta_{j}-1}{\eta_{i}-1} \right) \
 
 In this case, $\eta_{j}$ "describes the seeds produced per seed lost from the seed bank for plant species _i_. Larger ratios of $\kappa_{j}/\kappa_{i}$ indicate increasing fitness advantages of species _j_ over species _i_. Written in this way, there are two components to average fitness differences between competitors: a "demographic response ratio" ($({\eta_{j}-1})/({\eta_{i}-1})$) and "competitive response ratio" ($\sqrt{({\alpha_{ij}\alpha_{ii}})/({\alpha_{jj}\alpha_{ji}})}$). The "competitive response ratio" describes [...how much species _i_ is more sensitive to intra- and interspecific competition than species _j_...].
 
-###References
+### References
 MacArthur R (1970) Species packing and competitive equilibrium for many species. _Theor Pop Bio_ 1:1-11.  
 Armstrong RA, McGehee R (1980) Competitive exclustion. _Am Nat_ 115:151-170.  
 Tilman D (1982) Resource Competition and Community Structure. _Monographs in Population Biology_ (Princeton University Press, Princeton).  
