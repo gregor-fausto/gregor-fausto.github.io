@@ -6805,3 +6805,9 @@ td.visible-print {
     display: none !important;
   }
 }
+
+.center-image
+{
+    margin: 0 auto;
+    display: block;
+}
