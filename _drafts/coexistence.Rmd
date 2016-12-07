@@ -79,7 +79,7 @@ $$\frac{\alpha_{ji}}{\alpha_{ii}} = \frac{\kappa_{i}}{\kappa_{j}}\rho$$
 
 These can be combined into a single equation, providing a symmetric measure of the ratio of interspecific to intraspecific density dependence for any pair of species _i_ and _j_. Substitute the $\kappa$ terms from one equation into the other, and take the square root to get:
 
-$$\rho = \sqrt{\frac{\alpha_{ij}}{{\alpha}_{jj}} \cdot \frac{\alpha_{ji}}{{\alpha}_{ii}}}$$
+$$\rho = \sqrt{\frac{\alpha_{ij}}{\alpha_{jj}} \cdot \frac{\alpha_{ji}}{\alpha_{ii}}}$$
 
 With Chesson's assistance, Godoy and Levine (2014a) then rescaled an annual plant population growth model that accounts for intraspecific and interspecific density dependence to be able to calculate terms relating competition to components of equalizing and stabilizing fitness. The starting model is:
 
