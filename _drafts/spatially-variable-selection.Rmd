@@ -1,6 +1,6 @@
 ---
 title: "spatial variation and the maintenance of genetic variation"
-output: pdf_document
+output: default
 ---
 
 ```{r setup, include=FALSE}
