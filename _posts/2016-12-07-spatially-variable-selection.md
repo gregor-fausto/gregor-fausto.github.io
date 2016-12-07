@@ -4,8 +4,6 @@ layout: default
 ---
 
 
-## Spatial variation and the maintenance of genetic variation
-
 ### Standard diploid model for selection
 
 The model proposed in Levene (1953) has the following structure, which follows from standard diploid models. 
