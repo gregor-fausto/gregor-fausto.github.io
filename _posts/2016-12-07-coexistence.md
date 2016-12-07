@@ -1,5 +1,6 @@
 ---
 title: "Lotka-Volterra Competition Models"
+output: pdf_document
 layout: default
 ---
 
