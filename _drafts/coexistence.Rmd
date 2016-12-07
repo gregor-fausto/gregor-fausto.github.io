@@ -5,7 +5,7 @@ layout: default
 ---
 
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(fig.path='../images/coexistence-')
+knitr::opts_chunk$set(fig.path='{{ site.url }}/images/coexistence-')
 ```
 
 ### Lotka-Volterra Competition Models

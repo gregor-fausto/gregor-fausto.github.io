@@ -59,7 +59,7 @@ points(1-x,y2,type="l")
 polygon(c(1-x,rev(1-x)),c(y2,rev(y1)),col="gray")
 ```
 
-![Ratio of average fitness difference as a function of niche overlap and stabilizing niche differences](../images/coexistence-unnamed-chunk-2-1.png)
+![Ratio of average fitness difference as a function of niche overlap and stabilizing niche differences]({{ site.url }}/images/coexistence-unnamed-chunk-2-1.png)
 
 I'm at three alternative formulations of coexistence conditions.
 
