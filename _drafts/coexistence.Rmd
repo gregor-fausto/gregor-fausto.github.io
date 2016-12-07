@@ -71,11 +71,11 @@ $$\alpha_{jj}=s_{j}/\kappa_{j}, \quad \alpha_{ij}=\rho s_{j}/\kappa_{i}$$
 
 Intraspecific density dependence is strong (large values of $\alpha_{jj}$) if species _j_ is sensitive to competition (large $s_{j}$) or has low fitness (small $\kappa_{j}$). I'm trying to make sense of the latter: low per capita growth rates at low densities (at a given level of sensitivity) increases intraspecific density dependence - is that correct? Interspecific density dependence is strong (large values of $\alpha_{ij}$) if niche overlap is high ($\rho$ approaching 1), if _j_ is sensitive to competition (large $s_{j}$), or  if _i_ has low fitness (small $\kappa_{i}$). I think the Chesson and Kuang (2008) formulation might actually make things more complicated than necessary, at least to start. The text of their paper reads like you could get the same result using MacArthur's formulation of Lotka-Volterra as a resource competition model, though I'm not sure if it took Chesson-math to extend the logic. In any case, this packages itself into neat relationships between interaction coefficients, niche overlap, and ecological fitness:
 
-$$\frac{\alpha_{ij}}{{\alpha}_{jj}} = \frac{\kappa_{j}}{\kappa_{i}}\rho$$
+$$\frac{\alpha_{ij}}{\alpha_{jj}} = \frac{\kappa_{j}}{\kappa_{i}}\rho$$
 
 and the flip side of the relationship:
 
-$$\frac{\alpha_{ji}}{{\alpha}_{ii}} = \frac{\kappa_{i}}{\kappa_{j}}\rho$$
+$$\frac{\alpha_{ji}}{\alpha_{ii}} = \frac{\kappa_{i}}{\kappa_{j}}\rho$$
 
 These can be combined into a single equation, providing a symmetric measure of the ratio of interspecific to intraspecific density dependence for any pair of species _i_ and _j_. Substitute the $\kappa$ terms from one equation into the other, and take the square root to get:
 
