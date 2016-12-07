@@ -38,8 +38,6 @@ The shaded region of the graphs below show the regions of coexistence, as a func
 
 ![plot of chunk unnamed-chunk-2]({{ site.url }}/images/coexistence-unnamed-chunk-2-1.png)
 
-![plot of chunk unnamed-chunk-3]({{ site.url }}/images/coexistence-unnamed-chunk-3-1.png)
-
 I'm at three alternative formulations of coexistence conditions.
 
 $$\rho<\frac{h_{i}-m_{i}}{h_{j}-m_{j}}<1/\rho \\ \rho<\frac{\mu_{i}}{\mu_{j}} \cdot \frac{b_{j}}{b_{i}}<1/\rho \\ \rho<\frac{\kappa_{i}}{\kappa_{j}}<1/\rho$$
