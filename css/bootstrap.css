@@ -23,6 +23,7 @@ nav,
 section,
 summary {
   display: block;
+  line-height: 1;
 }
 
 audio,
