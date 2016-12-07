@@ -3,8 +3,8 @@ title: "spatial variation and the maintenance of genetic variation"
 output: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r, echo=FALSE}
+knitr::opts_chunk$set(fig.path='{{ site.url }}/images/spatially-variable-selection-')
 ```
 
 ### Standard Diploid Model for Selection

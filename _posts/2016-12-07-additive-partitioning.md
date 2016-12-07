@@ -2,6 +2,9 @@
 title: "Additive Partitioning of Biodiversity Effects"
 output: default
 ---
+
+
+
 $\frac{1}{N}_{i}\frac{dN}_{i}{dt} / \frac{b_1}{b_2}$
 
 $1\divided{N}_{i}$

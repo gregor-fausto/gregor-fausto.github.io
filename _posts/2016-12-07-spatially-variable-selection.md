@@ -141,7 +141,7 @@ matplot(1:ngens,pvals,type="o",lty=1,xlim=c(0,ngens),
         ylab="Frequency of Allele A (p)",xlab="Generation (n)");
 ```
 
-![plot of chunk levene](figure/levene-1.png)
+![plot of chunk levene]({{ site.url }}/images/spatially-variable-selection-levene-1.png)
 
 
 ```r
@@ -185,7 +185,7 @@ matplot(1:ngens,pvals,type="o",lty=1,xlim=c(0,ngens),
         ylab="Frequency of Allele A (p)",xlab="Generation (n)");
 ```
 
-![plot of chunk levene2](figure/levene2-1.png)
+![plot of chunk levene2]({{ site.url }}/images/spatially-variable-selection-levene2-1.png)
 
 
 ```r
@@ -229,6 +229,6 @@ matplot(1:ngens,pvals,type="o",lty=1,xlim=c(0,ngens),
         ylab="Frequency of Allele A (p)",xlab="Generation (n)");
 ```
 
-![plot of chunk levene3](figure/levene3-1.png)
+![plot of chunk levene3]({{ site.url }}/images/spatially-variable-selection-levene3-1.png)
 
 If we instead allow drift to play a role, we can begin by assuming an initial population size $N_{t_1}$ and niches of equal sizes. Differential mortality at each time step changes $N_{t_i}$ but each niche gets an equal share of the population at each time step.
