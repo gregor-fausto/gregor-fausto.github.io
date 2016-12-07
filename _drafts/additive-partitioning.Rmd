@@ -4,7 +4,7 @@ layout: default
 ---
 
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(fig.path='{{ site.url }}/images/additive-partitioning-')
+knitr::opts_chunk$set(fig.path='../images/additive-partitioning-')
 ```
 
 $$\frac{1}{N}_{i}\frac{dN}_{i}{dt} / \frac{b_1}{b_2}$$

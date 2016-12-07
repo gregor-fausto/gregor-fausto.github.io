@@ -5,6 +5,7 @@ layout: default
 
 
 
+### Lotka-Volterra Competition Models
 Let's start by writing the two-species Lotka-Volterra competition equations with absolute competition coefficients (Chesson 2000):
 
 $$\frac{1}{N_{i}} \cdot \frac{dN_{i}}{dt} = r_{i}(1 - \alpha_{ii}N_{i} - \alpha_{ij}N_{j}),\quad  i=1,2,\ j \neq i$$
@@ -57,7 +58,7 @@ points(1-x,y2,type="l")
 polygon(c(1-x,rev(1-x)),c(y2,rev(y1)),col="gray")
 ```
 
-![plot of chunk unnamed-chunk-2]({{ site.url }}/images/coexistence-unnamed-chunk-2-1.png)
+![Ratio of average fitness difference as a function of niche overlap and stabilizing niche differences](../images/coexistence-unnamed-chunk-2-1.png)
 
 I'm at three alternative formulations of coexistence conditions.
 

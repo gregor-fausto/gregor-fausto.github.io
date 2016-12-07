@@ -4,7 +4,7 @@ layout: default
 ---
 
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(fig.path='{{ site.url }}/images/spatially-variable-selection-')
+knitr::opts_chunk$set(fig.path='../images/spatially-variable-selection-')
 ```
 
 ### Standard Diploid Model for Selection
