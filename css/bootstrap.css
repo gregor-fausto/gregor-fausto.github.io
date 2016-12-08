@@ -331,7 +331,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #2e450d;
   text-decoration: underline;
 }
 
@@ -2309,7 +2309,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:hover,
 .btn-link:focus {
-  color: #2a6496;
+  color: #2e450d;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4002,8 +4002,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav a:hover .caret {
-  border-top-color: #2a6496;
-  border-bottom-color: #2a6496;
+  border-top-color: #2e450d;
+  border-bottom-color: #2e450d;
 }
 
 .nav-tabs .dropdown-menu {
