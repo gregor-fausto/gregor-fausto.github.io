@@ -1,0 +1,125 @@
+---
+title: "Correlation Heat Map"
+layout: default
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(fig.path='{{ site.url }}/images/correlation-heatmap-')
+```
+
+## The Data
+Let's use the `attitude` dataset that comes preloaded with R. We can read specifics in the R documentation (`?attitude`), but the data frame presents the aggregated results from questionnaires distributed in 30 departments at a financial organization. The data looks like this:
+
+```{r}
+head(attitude)
+```
+
+## Correlation
+We could be interested in correlations among the full dataset, or among a subset of variables. In both cases, use the base R function `cor` to calculate correlation coefficients (the default is the Pearson coefficient). To calculate the correlation among all columns:
+
+```{r}
+fullCorrelationMatrix <- cor(attitude)
+fullCorrelationMatrix
+```
+
+Select a subset of columns by position (column number) or variable name.
+
+```{r}
+partialCorrelationMatrix <- cor(attitude[c("rating","complaints","privileges")])
+partialCorrelationMatrix
+partialCorrelationMatrix <- cor(attitude[1:3])
+partialCorrelationMatrix
+```
+
+Then take a correlation matrix (eg. `partialCorrelationMatrix`) and reshape the data frame so that it's in _long format_; each possible variable type (or combination of) has its own row with columns for variables and another for values of those variables. There are a few ways of doing this, including `melt` in the `reshape2` package and `gather` in the `tidyr` package. This example uses the former. See more about `melt` [here](http://seananderson.ca/2013/10/19/reshape.html) and [here](http://www.cookbook-r.com/Manipulating_data/Converting_data_between_wide_and_long_format/). See what the _molten_ data frame looks like.
+
+```{r, warning=FALSE}
+require(reshape2)
+moltenCorrelationMatrix<-melt(partialCorrelationMatrix)
+moltenCorrelationMatrix
+```
+
+Make sure that your first two columns are factors.
+
+```{r, warning=FALSE}
+moltenCorrelationMatrix$Var1<-as.factor(moltenCorrelationMatrix$Var1)
+moltenCorrelationMatrix$Var2<-as.factor(moltenCorrelationMatrix$Var2)
+```
+
+Use `ggplot2` to create a basic heat map. The way this works is that `ggplot2` ascribes values from the data frame to the plot. In this case, the x- and y-axes are variable names and `fill` is the correlation coefficient. 
+
+```{r, warning=FALSE, fig.width=4.5, fig.height=2.5, fig.align = 'center'}
+require(ggplot2)
+ggplot(data = moltenCorrelationMatrix) +
+  geom_tile(aes(x = Var2, y = Var1, fill = value))
+```
+
+Ugh, it's so ugly! Ok, ok. Fine tune it so that your color gradient scales from (-1,1) and is intuitively appealing (blue,red). In this particular example, there's no negative correlations so nothing shows up blue.
+
+```{r,warning=FALSE, fig.width=4.5, fig.height=2.5, fig.align = 'center'}
+require(ggplot2)
+ggplot(data = moltenCorrelationMatrix) +
+  geom_tile(aes(x = Var2, y = Var1, fill = value)) + 
+  scale_fill_gradient2(low = "blue", 
+                       high = "red",
+                       mid = "white", 
+                       midpoint = 0, 
+                       limit = c(-1,1),
+                       name = "Correlation\n(Pearson)")
+```
+  
+Fine tune the axes even more, adjusting the orientation of axis text, and suppress those pesky `Var1` and `Var2`.
+
+```{r, echo=FALSE, warning=FALSE, fig.align = 'center'}
+out<-ggplot(data = moltenCorrelationMatrix) +
+  geom_tile(aes(x = Var2, y = Var1, fill = value)) + 
+  scale_fill_gradient2(low = "blue", 
+                       high = "red",
+                       mid = "white", 
+                       midpoint = 0, 
+                       limit = c(-1,1),
+                       name = "Correlation\n(Pearson)") +
+  theme(axis.text.x = element_text(angle=45, vjust=1, size=11, hjust=1),
+        axis.title.x=element_blank(), 
+        axis.title.y=element_blank()) +
+  coord_equal() + 
+  scale_x_discrete(expand = c(0,0)) + 
+  scale_y_discrete(expand = c(0,0))
+out
+```
+
+Another thing I often want to do is reorganize the axes by values of a particular column. You can use different functions to do this, but you need to reorganize the levels underlying the factors Var1 or Var2. One example of how you would do this by hand:
+
+```{r,warning=FALSE, fig.width=4.5, fig.height=2.5, fig.align = 'center'}
+# rename to be succinct
+m <- fullCorrelationMatrix 
+m <- melt(m)
+
+# change factor levels
+m$Var1 <- factor(m$Var1, levels=(c("complaints","rating","learning",
+                               "raises","advance","critical","privileges")))
+m$Var2 <- factor(m$Var2, levels=(c("complaints","rating","learning",
+                               "raises","advance","critical","privileges")))
+out<-ggplot(data = m) +
+  geom_tile(aes(x = Var2, y = Var1, fill = value)) + 
+  scale_fill_gradient2(low = "blue", 
+                       high = "red",
+                       mid = "white", 
+                       midpoint = 0, 
+                       limit = c(-1,1),
+                       name = "Correlation\n(Pearson)") +
+  theme(axis.text.x = element_text(angle=45, vjust=1, size=11, hjust=1),
+        axis.title.x=element_blank(), 
+        axis.title.y=element_blank()) +
+  coord_equal() + 
+  scale_x_discrete(expand = c(0,0)) + 
+  scale_y_discrete(expand = c(0,0))
+out
+```
+
+There's the super-quick way of doing this, too. Here, `qplot` is a useful way of successfully implementing verbose `ggplot2` code while foregoing some of the detailed control. 
+
+```{r, echo=FALSE, warning=FALSE, fig.width=4.5, fig.height=2.5, fig.align = 'center'}
+qplot(x=Var1, y=Var2, data=melt(cor(attitude)), fill=value, geom="tile")
+```
+
