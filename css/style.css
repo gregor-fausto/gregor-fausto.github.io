@@ -31,8 +31,8 @@ img.avatar { margin-bottom: 30px; }
 .marketing p.lead { line-height: 30px; }
 
 /* Notes */
-.notelist { width: 600px; margin: 0 auto; }
-ul.listnotes { margin: 0 auto; }
+.notelist { margin: 80px 0; }
+ul.listnotes { margin: 0 auto; line-height: 25px; }
 ul.listnotes li {line-height: 30px; } 
 
 /* Note */
