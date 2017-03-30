@@ -29,6 +29,8 @@ img.avatar { margin-bottom: 30px; }
 .jumbotron .btn { font-size: 21px; padding: 14px 24px; }
 .marketing p { line-height: 25px; }
 .marketing p.lead { line-height: 30px; }
+.marketing ul.listnotes { margin: 0 auto; }
+.marketing ul.listnotes li {line-height: 1.6em; font-size: 16 px; font-weight: 200; }
 
 /* Notes */
 .notelist { width: 600px; margin: 0 auto; }
