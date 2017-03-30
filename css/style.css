@@ -5,7 +5,7 @@ body { padding-top: 20px; padding-bottom: 40px; font-family: 'Merriweather', Geo
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Merriweather', Georgia, Times; font-weight: 700;}
 
-blockquote p { font-size: 16px; line-height: 1.6em; }
+blockquote p { font-size: 16px; line-height: 30px; }
 
 /* Masthead */
 .header, .footer, .header h3 { font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }
@@ -30,7 +30,7 @@ img.avatar { margin-bottom: 30px; }
 .marketing p { line-height: 25px; }
 .marketing p.lead { line-height: 30px; }
 .marketing ul.listnotes { margin: 0 auto; }
-.marketing ul.listnotes li {line-height: 1.6em; font-size: 16 px; font-weight: 200; }
+.marketing ul.listnotes li {line-height: 30px; font-size: 16 px; font-weight: 200; }
 
 /* Notes */
 .notelist { width: 600px; margin: 0 auto; }
