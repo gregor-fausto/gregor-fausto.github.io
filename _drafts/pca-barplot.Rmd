@@ -4,7 +4,7 @@ layout: default
 ---
 
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(fig.path='../images/pca-barplot-')
+knitr::opts_chunk$set(fig.path='{{ site.url }}/images/pca-barplot-')
 ```
 
 ## Objective
