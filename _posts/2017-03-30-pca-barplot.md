@@ -1,5 +1,6 @@
 ---
 title: "pca barplot"
+output: pdf+document
 layout: default
 ---
 
@@ -97,8 +98,8 @@ The data is now structured so that plotting is convenient. Each unique combinati
 
 The basic pieces are the data frame (`df`) and adding a bar plot (via `geom_bar()`). If you're unfamiliar with ggplot, terms in `aes()` are used to define plotting and aesthetic elements based on the data frame. Here, the x-axis presents the factors in `variable` and the y-axis the numbers in `loading`. Calling `stat="identity"`, means that the heights of the bars represent values in the data; the default is `stat="bin"` where the heights represent counts of the number of cases in a group. `facet_wrap()` adds a panel for each value of the variable specified in the `facets` term. In this case, we want a unique panel for each PC axis. As you can see, this basically produces the kind of plot that we want. 
 
-<img src="{{ site.url }}/images/pca-barplot-unnamed-chunk-7-1.png" title="Basic PCA barplot" alt="Basic PCA barplot" style="display: block; margin: auto;" />
+![Basic PCA barplot]({{ site.url }}/images/pca-barplot-unnamed-chunk-7-1.png)
 
 That's the basic graph but it doesn't look very nice. There are a lot of aesthetic changes that can be made with the various ggplot2 functions. I give an example of what's possible below but other modifications are possible. 
 
-<img src="{{ site.url }}/images/pca-barplot-unnamed-chunk-8-1.png" title="PCA barplot with groups identified by color" alt="PCA barplot with groups identified by color" style="display: block; margin: auto;" />
+![PCA barplot with groups identified by color]({{ site.url }}/images/pca-barplot-unnamed-chunk-8-1.png)
