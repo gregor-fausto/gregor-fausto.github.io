@@ -106,7 +106,7 @@ ggplot(data=df) +
   facet_wrap(facets=~axis,nrow=1)
 ```
 
-![plot of chunk unnamed-chunk-7](../images/pca-barplot-unnamed-chunk-7-1.png)
+![plot of chunk unnamed-chunk-7]({{ site.url }}/images/pca-barplot-unnamed-chunk-7-1.png)
 
 That's the basic graph but it doesn't look too nice. There are a lot of aesthetic changes that can be made with the various ggplot2 functions. I give an example of what's possible below but other modifications are possible. 
 
@@ -129,4 +129,4 @@ ggplot(df) +
   )
 ```
 
-![plot of chunk unnamed-chunk-8](../images/pca-barplot-unnamed-chunk-8-1.png)
+![plot of chunk unnamed-chunk-8]({{ site.url }}/images/pca-barplot-unnamed-chunk-8-1.png)
