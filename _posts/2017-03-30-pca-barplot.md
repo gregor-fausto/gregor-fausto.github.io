@@ -97,36 +97,8 @@ The data is now structured so that plotting is convenient. Each unique combinati
 
 The basic pieces are the data frame (`df`) and adding a bar plot (via `geom_bar()`). If you're unfamiliar with ggplot, terms in `aes()` are used to define plotting and aesthetic elements based on the data frame. Here, the x-axis presents the factors in `variable` and the y-axis the numbers in `loading`. Calling `stat="identity"`, means that the heights of the bars represent values in the data; the default is `stat="bin"` where the heights represent counts of the number of cases in a group. `facet_wrap()` adds a panel for each value of the variable specified in the `facets` term. In this case, we want a unique panel for each PC axis. As you can see, this basically produces the kind of plot that we want. 
 
+<img src="{{ site.url }}/images/pca-barplot-unnamed-chunk-7-1.png" title="Basic PCA barplot" alt="Basic PCA barplot" style="display: block; margin: auto;" />
 
-```r
-library(ggplot2)
+That's the basic graph but it doesn't look very nice. There are a lot of aesthetic changes that can be made with the various ggplot2 functions. I give an example of what's possible below but other modifications are possible. 
 
-ggplot(data=df) +
-  geom_bar(aes(x=variable,y=loading),stat="identity") +
-  facet_wrap(facets=~axis,nrow=1)
-```
-
-![plot of chunk unnamed-chunk-7]({{ site.url }}/images/pca-barplot-unnamed-chunk-7-1.png)
-
-That's the basic graph but it doesn't look too nice. There are a lot of aesthetic changes that can be made with the various ggplot2 functions. I give an example of what's possible below but other modifications are possible. 
-
-
-```r
-ggplot(df) +
-  geom_bar(aes(x=variable,y=loading,fill=class),stat="identity") +
-  scale_x_discrete(position="top") +
-  scale_y_continuous(breaks = c(-.4,0,.4)) +
-  coord_flip() +
-  facet_wrap(~axis,nrow=1) +
-  theme_bw()+
-  theme(
-    strip.background = element_blank(),
-    axis.title = element_blank(),
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(),
-    legend.position = "left",
-    axis.text.x = element_text(angle = 90, vjust = .5)
-  )
-```
-
-![plot of chunk unnamed-chunk-8]({{ site.url }}/images/pca-barplot-unnamed-chunk-8-1.png)
+<img src="{{ site.url }}/images/pca-barplot-unnamed-chunk-8-1.png" title="PCA barplot with groups identified by color" alt="PCA barplot with groups identified by color" style="display: block; margin: auto;" />

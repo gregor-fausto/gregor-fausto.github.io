@@ -4,7 +4,7 @@ layout: default
 ---
 
 ```{r, echo=FALSE}
-knitr::opts_chunk$set(fig.path='{{ site.url }}/images/pca-barplot-')
+knitr::opts_chunk$set(fig.path='{{ site.url }}/images/pca-barplot-',fig.align='center')
 ```
 
 ## Objective
@@ -55,7 +55,7 @@ The data is now structured so that plotting is convenient. Each unique combinati
 
 The basic pieces are the data frame (`df`) and adding a bar plot (via `geom_bar()`). If you're unfamiliar with ggplot, terms in `aes()` are used to define plotting and aesthetic elements based on the data frame. Here, the x-axis presents the factors in `variable` and the y-axis the numbers in `loading`. Calling `stat="identity"`, means that the heights of the bars represent values in the data; the default is `stat="bin"` where the heights represent counts of the number of cases in a group. `facet_wrap()` adds a panel for each value of the variable specified in the `facets` term. In this case, we want a unique panel for each PC axis. As you can see, this basically produces the kind of plot that we want. 
 
-```{r}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,fig.cap="Basic PCA barplot"}
 library(ggplot2)
 
 ggplot(data=df) +
@@ -63,9 +63,9 @@ ggplot(data=df) +
   facet_wrap(facets=~axis,nrow=1)
 ```
 
-That's the basic graph but it doesn't look too nice. There are a lot of aesthetic changes that can be made with the various ggplot2 functions. I give an example of what's possible below but other modifications are possible. 
+That's the basic graph but it doesn't look very nice. There are a lot of aesthetic changes that can be made with the various ggplot2 functions. I give an example of what's possible below but other modifications are possible. 
 
-```{r}
+```{r,echo=FALSE,message=FALSE,warning=FALSE,fig.cap="PCA barplot with groups identified by color"}
 ggplot(df) +
   geom_bar(aes(x=variable,y=loading,fill=class),stat="identity") +
   scale_x_discrete(position="top") +
