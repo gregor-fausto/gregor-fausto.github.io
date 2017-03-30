@@ -100,7 +100,7 @@ This is equivalent to saying that the harmonic mean of the relative fitness of t
 __Spatial variation in selection pressures can maintain a stable polymorphism if the harmonic mean of the fitness of each homozygote is less than the fitness of the heterozygote.__ This condition is equivalent to there being a reversal in the ordering of fitnesses across two habitats; this is also called a __negative genetic correlation__ in fitness across habitats.
 
 * note this result is different than what Levene (1953) suggests. He writes that p=0.35 should be a stable equilibrium, and that p=0.6 should be unstable
-```{r levene}
+```{r levene,fig.align='center'}
 rm(list=ls(all=TRUE))
 
 ngens=1001
@@ -141,7 +141,7 @@ matplot(1:ngens,pvals,type="o",lty=1,xlim=c(0,ngens),
         ylab="Frequency of Allele A (p)",xlab="Generation (n)");
 ```
 
-```{r levene2}
+```{r levene2,fig.align='center'}
 rm(list=ls(all=TRUE))
 
 ngens=1001
@@ -182,7 +182,7 @@ matplot(1:ngens,pvals,type="o",lty=1,xlim=c(0,ngens),
         ylab="Frequency of Allele A (p)",xlab="Generation (n)");
 ```
 
-```{r levene3}
+```{r levene3,fig.align='center'}
 rm(list=ls(all=TRUE))
 
 ngens=1001

@@ -107,7 +107,7 @@ ggplot(data=df) +
   facet_wrap(facets=~axis,nrow=1)
 ```
 
-![Basic PCA barplot]({{ site.url }}/images/pca-barplot-unnamed-chunk-7-1.png)
+<img src="{{ site.url }}/images/pca-barplot-unnamed-chunk-7-1.png" title="Basic PCA barplot" alt="Basic PCA barplot" style="display: block; margin: auto;" />
 
 That's the basic graph but it doesn't look very nice. There are a lot of aesthetic changes that can be made with the various ggplot2 functions. I give an example of what's possible below but other modifications are possible. 
 
