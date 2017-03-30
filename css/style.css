@@ -32,7 +32,7 @@ img.avatar { margin-bottom: 30px; }
 .marketing ul.listnotes li { line-height: 30 px; }
 
 /* Notes */
-.notelist { width: 600px; margin: 0 auto; }
+.notelist { margin: 80px 0; }
 ul.listnotes { margin: 0 auto; }
 ul.listnotes li {line-height: 30px; font-size: 16 px; font-weight: 200; }
 
