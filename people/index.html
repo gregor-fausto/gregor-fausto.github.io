@@ -3,7 +3,9 @@ layout: default
 title: People
 description: Important people
 ---
-<div class="notelist">
+<div class="notes">
+  <div class="notelist">
+    {% for post in site.posts %}
   <h3>Current</h3>
   <ul class="listnotes list-unstyled">
     <li><a href="http://blogs.cornell.edu/geberlab/">Geber Lab</a></li>
@@ -14,5 +16,8 @@ description: Important people
     <li>Guppy wrangler with <a href="http://cnas.ucr.edu/guppy/">The Guppy Project</a>
     <li><a href="http://pfisterlab.uchicago.edu">Pfister Lab</a> at the University of Chicago</li>
   </ul>
+  </div>
+      {% endfor %}
 </div><!--/.notelist -->
+<!--/.notes -->
 
