@@ -1,11 +1,11 @@
 ---
-output:
-  pdf_document:
-    fig_height: 4
-    fig_width: 8
-  html_document: default
-font-family: Calibri
+title: "pca barplot"
+layout: default
 ---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(fig.path='../images/pca-barplot-')
+```
 
 ## Objective
 I describe how to use R to perform a principal component analysis on a data frame and how to use the `ggplot2` package to plot the loadings on each PC axis with a bar graph.
