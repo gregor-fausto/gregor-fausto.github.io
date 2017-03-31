@@ -1,19 +1,26 @@
 <!DOCTYPE html>
+<head>
+  {% if site.env == 'production' %}
+  <link rel="stylesheet" href="/build/style.min.css">
+  {% else %}
+  <link rel="stylesheet" href="/debug/style.css">
+  {% endif %}
+</head>
 <html lang="en">
-	
-	{% include head.html %}
-	
-	<body>
-		<div class="container">
-			
-			{% include header.html %}
-			
-			{{ content }}
-			
-			{% include footer.html %}
-		
-		</div> <!-- /container -->
-	
-	</body>
+  
+  {% include head.html %}
+  
+  <body>
+    <div class="container">
+      
+      {% include header.html %}
+      
+      {{ content }}
+      
+      {% include footer.html %}
+      
+    </div> <!-- /container -->
+    
+  </body>
 
 </html>

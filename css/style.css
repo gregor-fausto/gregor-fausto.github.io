@@ -104,3 +104,17 @@ pre.prettyprint { padding: 10px !important; margin: 40px; font-size: 12px;}
 h2, .h2 {
     font-size: 18px;
 }
+
+body {
+  max-width: 700px;
+  padding: 12px;
+  padding-bottom: 0;
+}
+
+@media only screen and (min-width: 481px) {
+  body {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
