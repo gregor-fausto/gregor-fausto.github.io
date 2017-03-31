@@ -193,3 +193,7 @@ h2, .h2 {
 .navbar-inverse .navbar-toggle:active .icon-bar {
     background-color: #ffffff;
 }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #ffffff; /* Whatever Colour you want */
+}
