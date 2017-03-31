@@ -144,10 +144,6 @@ h2, .h2 {
     line-height: 20px;
     border-top: 1px solid #333;
   }
-  #navbar {
-      background-color: #ffffff;
-      color: #ffffff; 
-  }
   
 .navbar {
     background-color:#ffffff;
@@ -209,6 +205,66 @@ h2, .h2 {
 ul.nav a:hover { color: #73AD21 !important; }
 
 }
+  
+.navbar {
+    background-color:#ffffff;
+    color:#ffffff;
+    border-color: #ffffff;
+    margin-bottom: 0px;
+}
+
+.navbar-btn {
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
+}
+
+.navbar-toggle {
+    color: #ffffff;
+    background-color: #73AD21;
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
+}
+
+.navbar-toggle:active {
+    color: #73AD21;
+    background-color: #73AD21;
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
+}
+
+.navbar-inverse .navbar-toggle:hover {
+    color: #73AD21;
+    background-color: #73AD21;
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
+}
+
+.navbar-inverse .navbar-toggle {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #73AD21;
+}
+
+.navbar-inverse .navbar-toggle:hover .icon-bar {
+    background-color: #ffffff;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-header {
+    border-color: #ffffff; /* Whatever Colour you want */
+}
+
+ul.nav a:hover { color: #73AD21 !important; }
+
 
 /* Subfooter
 ------------------------------------------------------------------- */
