@@ -153,5 +153,7 @@ h2, .h2 {
 .navbar {
     background-color:#ffffff;
     color:#ffffff;
-    border-color: transparent;
+    border-color: #ffffff;
 }
+
+.navbar-inverse .btn-navbar {background:#6fac5d;}
