@@ -266,37 +266,6 @@ h2, .h2 {
 
 ul.nav a:hover { color: #73AD21 !important; }
 
-
-/* Subfooter
-------------------------------------------------------------------- */
-
-#subfooter {
-    background: $subfooter-bg;
-    color: $subfooter-color;
-    padding-top: 30px;
-}
-
-#subfooter-left ul.inline-list {
-    float: left;
-}
-
-/* Styles go here */
-
-html,
-body { height: 100%; }
-
-body {
-    display: table;
-    width: 100%;
-}
-
-.page-row {
-    display: table-row;
-    height: 1px;
-}
-
-.page-row-expanded { height: 100%; }
-
 .header h3 {
     margin-top: 0;
     margin-bottom: 0;
