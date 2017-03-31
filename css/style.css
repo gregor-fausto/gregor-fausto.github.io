@@ -110,7 +110,7 @@ h2, .h2 {
     width: extend-to-zoom;
 }
 
-@media (max-width: 547px) {
+@media (max-width: 400px) {
   #div.header {
     width: 100%;
   }
@@ -146,10 +146,9 @@ h2, .h2 {
   }
   #navbar {
       background-color: #ffffff;
-      color: #ffffff;
- }
-}
-
+      color: #ffffff; 
+  }
+  
 .navbar {
     background-color:#ffffff;
     color:#ffffff;
@@ -208,6 +207,8 @@ h2, .h2 {
 }
 
 ul.nav a:hover { color: #73AD21 !important; }
+
+}
 
 /* Subfooter
 ------------------------------------------------------------------- */
