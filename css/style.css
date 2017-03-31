@@ -194,7 +194,7 @@ h2, .h2 {
     background-color: #ffffff;
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-header {
     border-color: #ffffff; /* Whatever Colour you want */
 }
 
