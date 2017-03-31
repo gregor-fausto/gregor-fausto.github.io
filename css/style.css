@@ -170,6 +170,14 @@ h2, .h2 {
     padding: 5px; 
 }
 
+.navbar-toggle:active {
+    color: #73AD21;
+    background-color: #73AD21;
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
+}
+
 .navbar-inverse .navbar-toggle {
     color: #ffffff;
     background-color: #ffffff;
@@ -180,4 +188,8 @@ h2, .h2 {
 
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: #73AD21;
+}
+
+.navbar-inverse .navbar-toggle:active .icon-bar {
+    background-color: #ffffff;
 }
