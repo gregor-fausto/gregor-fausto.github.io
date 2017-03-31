@@ -178,7 +178,7 @@ h2, .h2 {
     padding: 5px; 
 }
 
-.navbar-toggle:hover {
+.navbar-inverse .navbar-toggle:hover {
     color: #73AD21;
     background-color: #73AD21;
     border-radius: 5px;
