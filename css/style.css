@@ -302,3 +302,12 @@ body {
     line-height: 40px;
     padding-bottom: 0px;
 }
+
+div.footer {text-align: center; }
+
+span small {
+    display:inline-block;
+   
+    margin:10px 10px 0 0;
+    padding:5px 10px
+}
