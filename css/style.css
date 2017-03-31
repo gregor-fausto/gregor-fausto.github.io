@@ -130,6 +130,7 @@ h2, .h2 {
     line-height: 40px;
     font-size: 1.4em;
     cursor: pointer;
+    background-color: transparent;
   }
   #nav ul {
     width: 100%;
@@ -143,4 +144,7 @@ h2, .h2 {
     line-height: 20px;
     border-top: 1px solid #333;
   }
+  #navbar {
+  background-color :transparent;
+ }
 }
