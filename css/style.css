@@ -211,6 +211,7 @@ h2, .h2 {
     color:#ffffff;
     border-color: #ffffff;
     margin-bottom: 0px;
+    border: 0;
 }
 
 .navbar-btn {
@@ -315,4 +316,11 @@ span.right small {
     display:inline-block;
     padding-left: 2rem;
     margin:10px 10px 0 0;
+}
+
+address {
+    display: block;
+    margin-bottom: 5px;
+    font-style: normal;
+    line-height: 1;
 }
