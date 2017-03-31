@@ -1,0 +1,185 @@
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+<div class="header">
+    <h3 class="text-muted"><a href="/">Gregor Siegmund</a></h3>
+  <nav id="nav">
+    <ul class="nav nav-pills pull-right">
+      <li class="{{ page.cv }}"><a href="/" title="home">home</a></li>
+      <!-- <li class="{{ page.projects }}"><a href="/projects" title="Projects">Projects</a></li> -->
+      <li class="{{ page.notes }}"><a href="/notes" title="notes">notes</a></li>
+      <li class="{{ page.contact }}"><a href="/people" title="people">people</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="http://blogs.cornell.edu/geberlab/" title="Geber Lab">Geber Lab</a>&nbsp;&nbsp;&nbsp;
+    <a href="http://ecologyandevolution.cornell.edu" title="Department of Ecology and Evolutionary Biology at Cornell">Ecology and Evolutionary Biology @ Cornell</a>
+  </address>
+</div> <!-- /header -->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav nav-pills navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
