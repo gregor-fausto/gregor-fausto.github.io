@@ -145,6 +145,7 @@ h2, .h2 {
     border-top: 1px solid #333;
   }
   #navbar {
-  background-color :transparent;
+      background-color: #ffffff;
+      color: #ffffff;
  }
 }
