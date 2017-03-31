@@ -190,7 +190,7 @@ h2, .h2 {
     background-color: #73AD21;
 }
 
-.navbar-inverse .navbar-toggle:active .icon-bar {
+.navbar-inverse .navbar-toggle:hover .icon-bar {
     background-color: #ffffff;
 }
 
