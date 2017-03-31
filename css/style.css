@@ -110,7 +110,7 @@ h2, .h2 {
     width: extend-to-zoom;
 }
 
-@media (max-width: 400px) {
+@media (min-width: 489px) {
   #div.header {
     width: 100%;
   }
