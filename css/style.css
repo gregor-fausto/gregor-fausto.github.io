@@ -162,11 +162,22 @@ h2, .h2 {
     padding: 5px; 
 }
 
-
-.navbar-inverse .navbar-toggle {
+.navbar-toggle {
     color: #ffffff;
     background-color: #73AD21;
     border-radius: 5px;
     border: 2px solid #73AD21;
     padding: 5px; 
+}
+
+.navbar-inverse .navbar-toggle {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #73AD21;
 }
