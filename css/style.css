@@ -197,3 +197,5 @@ h2, .h2 {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #ffffff; /* Whatever Colour you want */
 }
+
+ul.nav a:hover { color: #73AD21 !important; }
