@@ -163,7 +163,7 @@ h2, .h2 {
 }
 
 
-.btn-primary {
+.navbar-inverse .navbar-toggle {
     color: #ffffff;
     background-color: #73AD21;
     border-radius: 5px;
