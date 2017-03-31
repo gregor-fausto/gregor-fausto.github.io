@@ -110,7 +110,7 @@ h2, .h2 {
     width: extend-to-zoom;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 499px) {
   #div.header {
     width: 100%;
   }
@@ -157,6 +157,15 @@ h2, .h2 {
 }
 
 .navbar-btn {
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 5px; 
+}
+
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #73AD21;
     border-radius: 5px;
     border: 2px solid #73AD21;
     padding: 5px; 
