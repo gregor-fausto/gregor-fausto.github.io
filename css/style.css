@@ -111,10 +111,10 @@ h2, .h2 {
 }
 
 @media (max-width: 599px) {
-  #header .container {
+  #div.header {
     width: 100%;
   }
-  #header h1 {
+  #div.header h3 {
     padding-left: 3%;
   }
   #nav {
