@@ -16,7 +16,7 @@ h3.text-muted a {text-decoration: none; color: #6fac5d; }
 h3.text-muted a:hover { text-decoration: none; color: #193420; }
 
 img.avatar { margin-bottom: 30px; }
-		
+
 /* Custom container */
 .container > hr { margin: 30px 0; }
 .container > hr.footer {margin-bottom: 15px; }
@@ -111,101 +111,101 @@ h2, .h2 {
 }
 
 @media (min-width: 489px) {
-  #div.header {
-    width: 100%;
-  }
-  #div.header h3 {
-    padding-left: 3%;
-  }
-  #nav {
-    width: 100%;
-    top: 60px;
-  }
-  #nav:before {
-    content: '\2630';
-    display: block;
-    position: absolute;
-    right: 3%;
-    top: -50px;
-    line-height: 40px;
-    font-size: 1.4em;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  #nav ul {
-    width: 100%;
-    margin: 0px;
-  }
-  #nav ul li {
-    float: none;
-  }
-  #nav ul li a {
-    padding: 10px 3%;
-    line-height: 20px;
-    border-top: 1px solid #333;
-  }
-  
-.navbar {
-    background-color:#ffffff;
-    color:#ffffff;
-    border-color: #ffffff;
-    margin-bottom: 0px;
+    #div.header {
+	width: 100%;
+    }
+    #div.header h3 {
+	padding-left: 3%;
+    }
+    #nav {
+	width: 100%;
+	top: 60px;
+    }
+    #nav:before {
+	content: '\2630';
+	display: block;
+	position: absolute;
+	right: 3%;
+	top: -50px;
+	line-height: 40px;
+	font-size: 1.4em;
+	cursor: pointer;
+	background-color: transparent;
+    }
+    #nav ul {
+	width: 100%;
+	margin: 0px;
+    }
+    #nav ul li {
+	float: none;
+    }
+    #nav ul li a {
+	padding: 10px 3%;
+	line-height: 20px;
+	border-top: 1px solid #333;
+    }
+    
+    .navbar {
+	background-color:#ffffff;
+	color:#ffffff;
+	border-color: #ffffff;
+	margin-bottom: 0px;
+    }
+
+    .navbar-btn {
+	border-radius: 5px;
+	border: 2px solid #73AD21;
+	padding: 5px; 
+    }
+
+    .navbar-toggle {
+	color: #ffffff;
+	background-color: #73AD21;
+	border-radius: 5px;
+	border: 2px solid #73AD21;
+	padding: 5px; 
+    }
+
+    .navbar-toggle:active {
+	color: #73AD21;
+	background-color: #73AD21;
+	border-radius: 5px;
+	border: 2px solid #73AD21;
+	padding: 5px; 
+    }
+
+    .navbar-inverse .navbar-toggle:hover {
+	color: #73AD21;
+	background-color: #73AD21;
+	border-radius: 5px;
+	border: 2px solid #73AD21;
+	padding: 5px; 
+    }
+
+    .navbar-inverse .navbar-toggle {
+	color: #ffffff;
+	background-color: #ffffff;
+	border-radius: 5px;
+	border: 2px solid #73AD21;
+	padding: 5px; 
+    }
+
+    .navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #73AD21;
+    }
+
+    .navbar-inverse .navbar-toggle:hover .icon-bar {
+	background-color: #ffffff;
+    }
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-header {
+	border-color: #ffffff; /* Whatever Colour you want */
+    }
+
+    ul.nav a:hover { color: #73AD21 !important; }
+
 }
 
-.navbar-btn {
-    border-radius: 5px;
-    border: 2px solid #73AD21;
-    padding: 5px; 
-}
-
-.navbar-toggle {
-    color: #ffffff;
-    background-color: #73AD21;
-    border-radius: 5px;
-    border: 2px solid #73AD21;
-    padding: 5px; 
-}
-
-.navbar-toggle:active {
-    color: #73AD21;
-    background-color: #73AD21;
-    border-radius: 5px;
-    border: 2px solid #73AD21;
-    padding: 5px; 
-}
-
-.navbar-inverse .navbar-toggle:hover {
-    color: #73AD21;
-    background-color: #73AD21;
-    border-radius: 5px;
-    border: 2px solid #73AD21;
-    padding: 5px; 
-}
-
-.navbar-inverse .navbar-toggle {
-    color: #ffffff;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: 2px solid #73AD21;
-    padding: 5px; 
-}
-
-.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: #73AD21;
-}
-
-.navbar-inverse .navbar-toggle:hover .icon-bar {
-    background-color: #ffffff;
-}
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-header {
-    border-color: #ffffff; /* Whatever Colour you want */
-}
-
-ul.nav a:hover { color: #73AD21 !important; }
-
-}
-  
 .navbar {
     background-color:#ffffff;
     color:#ffffff;
@@ -285,13 +285,13 @@ html,
 body { height: 100%; }
 
 body {
-  display: table;
-  width: 100%;
+    display: table;
+    width: 100%;
 }
 
 .page-row {
-  display: table-row;
-  height: 1px;
+    display: table-row;
+    height: 1px;
 }
 
 .page-row-expanded { height: 100%; }
@@ -307,14 +307,12 @@ div.footer {text-align: center; }
 
 span.left small {
     display:inline-block;
-    float:left;
+    padding-left: 2rem;
     margin:10px 10px 0 0;
-    padding:5px 10px
 }
 
 span.right small {
     display:inline-block;
-    float:right;
+    padding-left: 2rem;
     margin:10px 10px 0 0;
-    padding:5px 10px
 }
