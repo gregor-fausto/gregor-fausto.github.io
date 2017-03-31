@@ -295,3 +295,10 @@ body {
 }
 
 .page-row-expanded { height: 100%; }
+
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 0px;
+}
