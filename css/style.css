@@ -305,9 +305,16 @@ body {
 
 div.footer {text-align: center; }
 
-span small {
+span.left small {
     display:inline-block;
-   
+    float:left;
+    margin:10px 10px 0 0;
+    padding:5px 10px
+}
+
+span.right small {
+    display:inline-block;
+    float:right;
     margin:10px 10px 0 0;
     padding:5px 10px
 }
