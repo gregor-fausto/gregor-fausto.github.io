@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: 'Arvo', seri
 blockquote p { font-size: 18px; line-height: 30px; }
 
 /* Masthead */
-.header, .footer, .header h3 { font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; }
+.header, .footer, .header h3 { font-family: 'Montserrat', Helvetica, sans-serif; text-transform: uppercase; font-weight: normal; padding-bottom: 10px; }
 
 /* Navigation */
 h3.text-muted a {text-decoration: none; color: #6fac5d; }
