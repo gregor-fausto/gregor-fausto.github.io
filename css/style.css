@@ -269,7 +269,7 @@ ul.nav a:hover { color: #73AD21 !important; }
 .header h3 {
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 40px;
+    line-height: 20px;
     padding-bottom: 0px;
 }
 
@@ -300,4 +300,5 @@ address {
     margin-bottom: 10px;
     font-style: normal;
     line-height: 1;
+    padding-bottom: 10px;
 }
