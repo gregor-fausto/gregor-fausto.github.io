@@ -31,7 +31,7 @@ img.avatar { margin-bottom: 30px; }
 .marketing p { line-height: 30px; }
 .marketing ul.listnotes { margin: 0 auto; }
 .marketing ul.listnotes li { line-height: 30px; text-indent: -30px; margin-left: 30px; }
-.marketing.section-images { margin: auto 2em; text-align: center; }
+.marketing section-images { margin: auto 2em; text-align: center; }
 
 
 /* Notes */
@@ -303,21 +303,4 @@ address {
     font-style: normal;
     line-height: 1;
     padding-bottom: 10px;
-}
-
-/* Images */
-
-.row{
-    min-height:50px;
-    margin-left:auto;
-    margin-right:auto;
-    padding:2%;
-}
-
-.half-row{
-    display: inline-block;
-    position: relative;
-    width:48%;
-    margin:1%;
-    height:200px;
 }
