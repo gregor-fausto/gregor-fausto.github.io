@@ -304,12 +304,18 @@ address {
 }
 
 /* Images */
-.twopics {
+
+.row{
+    min-height:50px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:2%;
+}
+
+.half-row{
     display: inline-block;
     position: relative;
-    margin: 0 px;
-    height: 200px; 
-}
-#images{
-   text-align:center;
+    width:48%;
+    margin:1%;
+    height:200px;
 }
