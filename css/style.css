@@ -302,3 +302,14 @@ address {
     line-height: 1;
     padding-bottom: 10px;
 }
+
+/* Images */
+.twopics {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px; 
+}
+#images{
+   text-align:center;
+}
