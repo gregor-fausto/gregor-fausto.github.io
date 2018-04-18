@@ -306,8 +306,8 @@ address {
 /* Images */
 .twopics {
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    margin: 0 px;
     height: 200px; 
 }
 #images{
