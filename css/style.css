@@ -304,3 +304,7 @@ address {
     line-height: 1;
     padding-bottom: 10px;
 }
+
+responsive-image {
+    width: 100%;  height: auto;
+} 
