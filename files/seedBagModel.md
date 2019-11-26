@@ -1,5 +1,5 @@
 ---
-title: "seed bag model"
+title: notes
 layout: default
 ---
 
