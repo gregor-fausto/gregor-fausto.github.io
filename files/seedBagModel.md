@@ -1,3 +1,8 @@
+---
+title: "teaching as research conference"
+layout: default
+---
+
 Parameter estimates for belowground transitions {#parameter-estimates-for-belowground-transitions .unnumbered}
 -----------------------------------------------
 
