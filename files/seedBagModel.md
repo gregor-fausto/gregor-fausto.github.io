@@ -1,5 +1,5 @@
 ---
-title: "teaching as research conference"
+title: "seed bag model"
 layout: default
 ---
 
