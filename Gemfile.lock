@@ -28,7 +28,7 @@ GEM
       liquid (= 2.5.5)
       maruku (= 0.7.0)
       rdiscount (= 2.1.7)
-      redcarpet (= 2.3.0)
+      redcarpet (>= 3.5.1)
     highline (1.6.21)
     html-pipeline (1.5.0)
       activesupport (>= 2)
