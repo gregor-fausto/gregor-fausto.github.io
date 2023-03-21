@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     RedCloth (>= 4.3.0)
-    activesupport (6.1.7.1)
+    activesupport (~> 6.1.7.3)
       i18n (~> 0.8, >= 0.8.0)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
